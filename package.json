@@ -1,0 +1,36 @@
+{
+  "name": "graphql-schema-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "nodemon": "nodemon",
+    "tsc": "tsc",
+    "start": "npm run nodemon -- --exec ts-node -r tsconfig-paths/register src/index.ts",
+    "build": "npm run tsc",
+    "run:server": "node server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SanthoshRaju91/graphql-schema-generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SanthoshRaju91/graphql-schema-generator/issues"
+  },
+  "homepage": "https://github.com/SanthoshRaju91/graphql-schema-generator#readme",
+  "dependencies": {
+    "@types/graphql": "^14.0.7",
+    "graphql": "^14.1.1",
+    "json-schema-ref-parser": "^6.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10",
+    "prettier": "^1.16.4",
+    "ts-node": "^8.0.3",
+    "tsconfig-paths": "^3.8.0",
+    "typescript": "^3.3.3333"
+  }
+}
